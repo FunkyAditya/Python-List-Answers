@@ -20,6 +20,12 @@
 
 # python program to create array of 5 integers and display arr items
 
-list = [i for i in range(1,6)]
-print(*list)
-print(list[int(input("Enter index to access : "))])
+# list = [i for i in range(1,6)]
+# print(*list)
+# print(list[int(input("Enter index to access : "))])
+
+n = [int(i) for i in input().split()] #this better
+# or
+x = list(map(int, input().split()))
+
+print(n, "\t", x)
